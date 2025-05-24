@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>حساب کاربری</title>
+    <link
+      rel="shortcut icon"
+      href="./images/favicon.webp"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+    <link rel="stylesheet" href="./styles/media.css" />
+  </head>
+  <body>
+    <main id="account-page">
+      <section class="container-register container-login-register">
+        <div class="register-rgiht">
+          <p class="error-message-password">رمز عبور مطابقت ندارد!</p>
+          <p class="message-register">ثبت نام با موفقیت انجام شد</p>
+          <div class="login-register-title">
+            <h2>ایرانی فرش</h2>
+            <p>ثبت نام</p>
+          </div>
+          <form class="form-register" action="" autocomplete="off">
+            <div>
+              <input
+                type="text"
+                name="name"
+                id="register-name"
+                placeholder="نام"
+                value=""
+                required
+              />
+              <label for="register-name">نام</label>
+            </div>
+            <div>
+              <input
+                type="text"
+                name="lastname"
+                id="register-lastname"
+                placeholder="نام خانوادگی"
+                value=""
+                required
+              />
+              <label for="register-lastname">نام خانوادگی</label>
+            </div>
+            <div>
+              <input
+                type="password"
+                name="password"
+                class="password-field"
+                id="register-password"
+                placeholder="رمز عبور"
+                value=""
+                required
+              />
+              <label for="register-password">رمز عبور</label>
+              <button
+                type="button"
+                class="show-password"
+                data-target="register-password"
+              >
+                <i class="fa-solid fa-eye"></i>
+              </button>
+            </div>
+            <div>
+              <input
+                type="password"
+                name="confirm-password"
+                class="password-field"
+                id="register-confirm-password"
+                placeholder="تکرار رمز عبور"
+                value=""
+                required
+              />
+              <label for="register-confirm-password">تکرار رمز عبور</label>
+              <button
+                type="button"
+                class="show-password"
+                data-target="register-confirm-password"
+              >
+                <i class="fa-solid fa-eye"></i>
+              </button>
+            </div>
+            <div>
+              <input
+                type="tel"
+                name="tel"
+                id="register-tel"
+                maxlength="11"
+                pattern="\d{11}"
+                placeholder="شماره موبایل"
+                value=""
+                required
+              />
+              <label for="register-tel">شماره موبایل</label>
+            </div>
+            <button type="submit">ثبت نام</button>
+            <p class="show-login">
+              حساب کاربری دارید؟ <a href="#">ورود</a> کنید
+            </p>
+          </form>
+        </div>
+        <div class="register-left">
+          <img src="./images/bg-login.webp" alt="bg-login" />
+        </div>
+      </section>
+      <section class="container-login container-login-register">
+        <div class="login-rgiht">
+          <div class="login-register-title">
+            <h2>ایرانی فرش</h2>
+            <p>ورود</p>
+          </div>
+          <form action="" autocomplete="off">
+            <div>
+              <input
+                type="tel"
+                name="tel"
+                id="login-tel"
+                maxlength="11"
+                pattern="\d{11}"
+                placeholder="شماره موبایل"
+                value=""
+                required
+              />
+              <label for="login-tel">شماره موبایل</label>
+            </div>
+            <div>
+              <input
+                type="password"
+                name="password"
+                class="password-field"
+                id="login-password"
+                placeholder="رمز عبور"
+                value=""
+                required
+              />
+              <label for="login-password">رمز عبور</label>
+              <button
+                type="button"
+                class="show-password"
+                data-target="login-password"
+              >
+                <i class="fa-solid fa-eye"></i>
+              </button>
+            </div>
+            <button type="submit">ورود</button>
+            <p class="show-forgot-password">
+              گذرواژه خود را فراموش کرده‌اید؟ <a href="#">بازیابی گذرواژه</a>
+            </p>
+            <p class="show-register">
+              ثبت نام نکرده اید؟ همین حالا <a href="#">عضو</a> شوید
+            </p>
+          </form>
+        </div>
+        <div class="login-left">
+          <img src="./images/bg-login.webp" alt="bg-login" />
+        </div>
+      </section>
+      <section class="container-forgot-password container-login-register">
+        <div class="forgot-password-rgiht">
+          <div class="message-forgot-password"></div>
+          <div class="login-register-title">
+            <h2>ایرانی فرش</h2>
+            <p>فراموشی گذرواژه</p>
+          </div>
+          <p class="text-forgot-password">
+            گذرواژه خود را فراموش کرده اید؟ شماره موبایل خود را وارد کنید.
+          </p>
+          <form class="form-forgot-password" action="" autocomplete="off">
+            <div>
+              <input
+                type="tel"
+                name="tel"
+                id="forgot-password-tel"
+                maxlength="11"
+                pattern="\d{11}"
+                placeholder="شماره موبایل"
+                value=""
+                required
+              />
+              <label for="forgot-password-tel">شماره موبایل</label>
+            </div>
+            <button type="submit">بازگردانی گذرواژه</button>
+            <p class="show-login">بازگشت به <a href="#">ورود</a></p>
+          </form>
+        </div>
+        <div class="forgot-password-left">
+          <img src="./images/bg-login.webp" alt="bg-login" />
+        </div>
+      </section>
+    </main>
+
+    <script src="./cdn/jquery/jquery.js"></script>
+    <script src="./cdn/fontawesome/icon-script.js"></script>
+    <script src="./js/script.js" defer></script>
+  </body>
+</html>
