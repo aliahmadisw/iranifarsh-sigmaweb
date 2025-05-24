@@ -1,0 +1,80 @@
+footer section {
+  background-color: #f9f9f9;
+  color: #505050;
+}
+
+.container-footer {
+  display: grid;
+  grid-template-columns: 454px 1fr;
+  column-gap: 60px;
+  justify-content: center;
+  padding: 30px;
+}
+
+/* درباره ما */
+.footer-info p {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 28px;
+  margin: 15px 0;
+  text-align: justify;
+}
+
+.footer-logo {
+  width: 100%;
+  max-width: 130px;
+}
+
+.footer-contact-namad {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-contact > a{
+  color: inherit;
+}
+
+.footer-social {
+  margin-top: 14px;
+  display: flex;
+  gap: 20px;
+}
+
+.footer-contact-namad img {
+  width: 86px;
+  height: 102px;
+}
+
+/* لینک ها */
+.footer-links {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer-links span {
+  border-bottom: 2px solid #ededed;
+  padding-bottom: 5px;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.footer-links ul {
+  list-style: none;
+  margin-top: 14px;
+}
+
+.footer-links li {
+  margin-bottom: 7px;
+}
+.footer-links li:last-child {
+  margin-bottom: 0;
+}
+
+.footer-links li a {
+  color: #8c8c8c;
+  transition: color 0.2s linear;
+}
+.footer-links li a:hover {
+  color: inherit;
+}
