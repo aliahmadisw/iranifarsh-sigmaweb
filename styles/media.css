@@ -1,0 +1,407 @@
+/*دسکتاپ*/
+@media screen and (min-width: 1025px) {
+  /* شروع صفحه اصلی */
+  /* دسته ها */
+
+  /* 2 */
+  .home-category-item-list2:nth-child(1) {
+    grid-column: 1;
+    grid-row: 1/3;
+  }
+  .home-category-item-list2:nth-child(2) {
+    grid-column: 2;
+    grid-row: 1/3;
+  }
+  .home-category-item-list2:nth-child(3) {
+    grid-column: 3;
+    grid-row: 1;
+  }
+  .home-category-item-list2:nth-child(4) {
+    grid-column: 3;
+    grid-row: 2;
+  }
+  /* پایان صفحه اصلی */
+
+  /*شروع صفحه ورود ثبت نام*/
+  .container-login-register {
+    width: 950px;
+  }
+  /*پایان صفحه ورود ثبت نام*/
+}
+
+/*تبلت*/
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .header-top {
+    grid-template-columns: 75% 25%;
+  }
+
+  .container-footer {
+    grid-template-columns: 100%;
+  }
+
+  .footer-links {
+    margin-top: 25px;
+  }
+
+  /* شروع صفحه اصلی */
+  /* هیرو سکشن */
+  .containerherosection {
+    grid-template-columns: 56% 40%;
+    gap: 30px;
+  }
+
+  .herosection-right h1 {
+    font-size: 29px;
+  }
+
+  .herosection-left img:last-child {
+    top: 240px;
+    right: 200px;
+  }
+
+  /* دسته ها */
+  .home-container-category-list {
+    grid-template-rows: repeat(2, 93px);
+  }
+
+  .home-category-item-title {
+    font-size: 15px;
+  }
+
+  .home-category-item-list a {
+    font-size: 14px;
+  }
+
+  /* اسلایدر محصولات */
+  .swiper-home-slider-farsh {
+    padding: 0 !important;
+  }
+
+  .swiper-home-slider-farsh .slide-farsh-content:hover {
+    transform: scale(1);
+  }
+
+  .home-slider-farsh-title {
+    grid-template-columns: 82% 18%;
+  }
+
+  /* باشگاه مشتریان */
+  .club-container {
+    grid-template-columns: repeat(2, 344px) !important;
+    justify-content: space-around;
+  }
+  /* پایان صفحه اصلی */
+
+  /*شروع صفحه ورود ثبت نام*/
+  .container-login-register {
+    width: 700px;
+    padding: 20px;
+  }
+
+  .container-login-register img {
+    width: 290px;
+    height: 460px;
+  }
+  /*پایان صفحه ورود ثبت نام*/
+}
+
+/*موبایل*/
+@media screen and (max-width: 767px) {
+  /* حذفیات */
+  /* .header-bottom nav,
+  .header-top input,
+  .container-home-category-list {
+    display: none;
+  } */
+
+  /* هدر */
+
+  .header-top {
+    grid-template-columns: 70% 30%;
+  }
+
+  .header-top-rgiht {
+    column-gap: 12px;
+  }
+
+  .header-top-rgiht img {
+    max-width: 95px;
+  }
+
+  .header-top-left a:last-child {
+    width: 38px;
+    height: 38px;
+  }
+  .header-top-left a:last-child span {
+    display: none;
+  }
+
+  /* هدر موبایل */
+
+  .container-menu-moblie {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: #fff;
+    z-index: 99;
+    top: 0;
+    right: 0;
+    transform: scale(0);
+    transition: transform 0.3s linear;
+  }
+
+  .container-menu-moblie.active {
+    transform: scale(1);
+  }
+
+  .container-menu-moblie-top {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: var(--border-width) var(--border-style) var(--border-color);
+  }
+
+  .container-menu-moblie-top img {
+    width: 150px;
+  }
+
+  .popup-menu-close {
+    background-color: var(--primary-color);
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    text-align: center;
+    line-height: 30px !important;
+    font-size: 23px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .container-menu-moblie nav {
+    padding-right: 10px;
+    margin-top: 25px;
+  }
+
+  .container-menu-moblie nav ul {
+    list-style: none;
+    padding-right: 0;
+  }
+
+  .container-menu-moblie nav ul li {
+    margin-bottom: 10px;
+    font-size: 15px;
+  }
+  .container-menu-moblie nav ul li:last-child {
+    margin-bottom: 0;
+  }
+
+  .container-menu-moblie nav a {
+    color: var(--text-color);
+  }
+
+  /* فوتر */
+  .container-footer {
+    grid-template-columns: 100%;
+    padding: 8px;
+  }
+
+  .footer-info {
+    order: 1;
+  }
+
+  .footer-info p {
+    font-size: 13px;
+  }
+
+  .footer-contact span {
+    font-size: 15px;
+  }
+
+  .footer-contact-namad img {
+    width: 76px;
+    height: 82px;
+  }
+
+  .footer-links {
+    margin-bottom: 30px;
+    column-gap: 12px;
+  }
+
+  .footer-links span {
+    border-bottom: 0;
+    font-size: 13px;
+  }
+
+  .footer-links ul li a {
+    font-size: 14px;
+  }
+  /* شروع صفحه اصلی */
+  /* هیرو سکشن */
+  .containerherosection {
+    grid-template-columns: 100%;
+    row-gap: 22px;
+  }
+
+  .herosection-right {
+    order: 1;
+  }
+
+  .herosection-right h1 {
+    font-size: 20px;
+  }
+
+  .herosection-right p {
+    font-size: 14px;
+  }
+
+  .herosection-left {
+    justify-self: center;
+  }
+
+  .herosection-right-btns {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+  }
+
+  .herosection-right-btns a:first-child,
+  .herosection-right-btns .club-container-btn-join {
+    font-size: 12px;
+    padding: 9px;
+    width: 100%;
+    font-weight: 500;
+  }
+
+  .herosection-left img:first-child {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .herosection-left img:last-child {
+    width: 56px;
+    top: 240px;
+    right: 247px;
+  }
+
+  /* دسته ها */
+  .container-home-category-list-Swiper-moblie {
+    display: block;
+    margin-top: 40px;
+  }
+
+  .home-container-category-list-slide-moblie .swiper-slide {
+    font-size: 18px;
+    display: flex;
+    align-items: flex-end;
+    padding: 20px;
+  }
+
+  .swiper-slide.home-category-item-list-moblie {
+    height: 270px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 16px;
+  }
+
+  .home-category-item-list-moblie.home-category-item-list1:nth-child(3) {
+    background-image: url("../images/padari-dastbaft-mobile.webp");
+  }
+  .home-category-item-list-moblie.home-category-item-list1:nth-child(4) {
+    background-image: url("../images/mokat-otaq-mobile.webp");
+  }
+
+  .home-category-item-list-moblie.home-category-item-list2:nth-child(3) {
+    background-image: url("../images/ghaliche-dastbaft-mobile.webp");
+  }
+  .home-category-item-list-moblie.home-category-item-list2:nth-child(4) {
+    background-image: url("../images/ghaliche-mashini-mobile.webp");
+  }
+
+  /* اسلایدر محصولات */
+
+  .swiper-home-slider-farsh {
+    padding: 0 !important;
+  }
+
+  .swiper-home-slider-farsh .slide-farsh-content {
+    max-width: 100% !important;
+  }
+
+  .swiper-home-slider-farsh .slide-farsh-content:hover {
+    transform: scale(1);
+  }
+
+  .home-slider-farsh-title {
+    grid-template-columns: 100%;
+  }
+
+  /*  باشگاه مشتریان */
+  .club-container {
+    grid-template-columns: 100%;
+  }
+
+  .club-container-left {
+    order: -1;
+    justify-self: center;
+    margin-bottom: 20px;
+  }
+
+  .club-container-left img {
+    width: 140px;
+  }
+
+  .club-container-title {
+    font-weight: 400;
+  }
+
+  .club-container-right {
+    margin-bottom: 40px;
+  }
+  /* پایان صفحه اصلی */
+  /*شروع صفحه ورود ثبت نام*/
+  #account-page {
+    justify-content: space-evenly;
+  }
+  .container-login-register {
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 100%;
+    gap: 0;
+  }
+
+  .container-login-register > div:first-child {
+    order: 1;
+    background-color: #fff;
+    border-radius: 20px 20px 0 0;
+    padding: 10px;
+  }
+
+  .container-login-register div:last-child {
+    width: 100%;
+    margin-bottom: -157px;
+  }
+
+  .container-login-register img {
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+  }
+
+  /*پایان صفحه ورود ثبت نام*/
+}
+
+/* کد برای تبلت‌ها و دسکتاپ‌ها */
+@media screen and (min-width: 768px) {
+  .container-login-register {
+    height: 640px;
+    margin: 0 auto;
+    padding: 10px;
+    gap: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 7px rgb(0, 0, 0, 0.5);
+    border-radius: var(--border-radius);
+  }
+}
