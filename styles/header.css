@@ -1,5 +1,3 @@
-@import url(./default-style-irf.css);
-
 header .container {
   padding: 24px 0 10px;
   border-bottom: var(--border-width) var(--border-style) var(--border-color);
