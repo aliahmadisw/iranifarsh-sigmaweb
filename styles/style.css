@@ -1,0 +1,681 @@
+@import url(./font.css);
+@import url(./default-style-irf.css);
+
+:root {
+  --text-color: #121212;
+  --btn-color: #fff;
+  --border-radius: 10px;
+  --primary-color: #cb1b1b;
+  --input-background: #ededed;
+  --border-width: 1px;
+  --border-style: solid;
+  --border: 1px solid #cb1b1b;
+  --border-color: #d9d9d9;
+  --line-height: 2rem;
+}
+
+*,
+*::after,
+*::before {
+  font-family: "Estedad", sans-serif;
+  outline: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: #fff;
+}
+
+image {
+  vertical-align: middle;
+}
+
+.container {
+  max-width: 1224px;
+  padding: 0 10px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+header {
+  padding: 0 10px;
+}
+
+i::before {
+  font-family: "Font Awesome 6 Free" !important;
+}
+
+/* شروع صفحه اصلی */
+/* شروع هیروسکشن */
+.herosection {
+  margin-top: 30px;
+}
+
+.containerherosection {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  align-items: center;
+}
+
+.herosection-right {
+  text-align: center;
+  position: relative;
+}
+
+.herosection-circles {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  background-color: var(--primary-color);
+  border-radius: 100%;
+  z-index: -1;
+}
+.herosection-circle1 {
+  left: 590px;
+  top: -100px;
+  filter: blur(250px);
+}
+
+.herosection-circle2 {
+  left: 40px;
+  top: 70px;
+  filter: blur(250px);
+}
+
+.herosection-right h1 {
+  color: var(--text-color);
+  font-size: 35px;
+}
+
+.herosection-right h1 span {
+  color: var(--primary-color) !important;
+}
+
+.herosection-right p {
+  font-size: 16px;
+  font-weight: 500;
+  max-width: 450px;
+  margin: 15px auto;
+  line-height: 2rem;
+}
+
+.herosection-right-btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 30px;
+}
+
+.herosection-right-btns a:first-child {
+  border: var(--border);
+  color: var(--primary-color);
+  font-size: 14px;
+  border-radius: var(--border-radius);
+  padding: 8px;
+  background-color: transparent;
+}
+
+.herosection-right-btns .club-container-btn-join {
+  background-color: var(--primary-color);
+  color: #fff;
+  font-size: 14px;
+  border-radius: var(--border-radius);
+  padding: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.herosection-left {
+  position: relative;
+}
+
+.herosection-left img:first-child {
+  width: 100%;
+  max-width: 450px;
+}
+
+.herosection-left img:last-child {
+  width: 86px;
+  height: 16px;
+  position: absolute;
+  top: 350px;
+  right: 340px;
+}
+
+/* پایان هیروسکشن */
+
+/* شروع دسته ها1 */
+
+.home-container-category-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 110px);
+  gap: 24px;
+  margin-top: 40px;
+}
+.home-category-item-list {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 16px;
+  display: flex;
+  align-items: flex-end;
+  padding: 10px;
+  position: relative;
+}
+
+.home-category-item-title {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.home-category-item-title a {
+  color: #fff;
+  border: var(--border-width) var(--border-style) #fff;
+  border-radius: var(--border-radius);
+  padding: 6px;
+  font-size: 15px;
+}
+.home-category-item-list::before,
+.home-category-item-list-moblie::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  background: linear-gradient(
+      269.67deg,
+      rgb(1 48 117 / 66%) -96.09%,
+      rgb(0 0 0 / 22%) 99.55%
+    ),
+    linear-gradient(
+      270.11deg,
+      rgb(1 48 117 / 8%) -99.67%,
+      rgb(0 0 0 / 0%) 99.78%
+    );
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.home-category-item-list1:nth-child(1) {
+  background-image: url("../images/farsh-jadid.webp");
+  grid-column: 1;
+  grid-row: 1/3;
+}
+.home-category-item-list1:nth-child(2) {
+  background-image: url("../images/farsh-rangarang.webp");
+  grid-column: 2;
+  grid-row: 1/3;
+}
+.home-category-item-list1:nth-child(3) {
+  background-image: url("../images/padari-dastbaft.webp");
+  grid-column: 3;
+  grid-row: 1;
+}
+.home-category-item-list1:nth-child(4) {
+  background-image: url("../images/mokat-otaq.webp");
+  grid-column: 3;
+  grid-row: 2;
+}
+
+/* 2 */
+.home-category-item-list2:nth-child(1) {
+  background-image: url("../images/farsh-modern-fantazi.webp");
+  grid-column: 1;
+  grid-row: 1/3;
+}
+.home-category-item-list2:nth-child(2) {
+  background-image: url("../images/farsh-dastbaft-tabriz.webp");
+  grid-column: 2;
+  grid-row: 1/3;
+}
+.home-category-item-list2:nth-child(3) {
+  background-image: url("../images/ghaliche-dastbaft.webp");
+  grid-column: 3;
+  grid-row: 1;
+}
+.home-category-item-list2:nth-child(4) {
+  background-image: url("../images/ghaliche-mashini.webp");
+  grid-column: 3;
+  grid-row: 2;
+}
+/* پایان دسته ها1 */
+
+/* شروع اسلایدر فرش های دستباف */
+.home-slider-farsh {
+  margin-top: 40px;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-home-slider-farsh {
+  margin-top: 30px;
+  padding: 5px !important;
+}
+
+.swiper-home-slider-farsh .slide-farsh-content {
+  max-width: 280px !important;
+  height: auto !important;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  color: var(--text-color);
+  border: 1px solid #d9d9d9;
+  border-radius: var(--border-radius);
+  padding: 14px;
+  gap: 15px;
+  transition: all 0.2s linear;
+}
+
+.swiper-home-slider-farsh .slide-farsh-content:hover {
+  transform: scale(1.02);
+  border-color: #cb1b1b54;
+}
+
+.home-slider-farsh-title {
+  display: grid;
+  grid-template-columns: 88% 12%;
+  align-items: center;
+}
+
+.home-slider-farsh-title h2 {
+  font-size: 20px;
+  color: var(--text-color);
+}
+
+.home-slider-farsh-title a {
+  border: var(--border);
+  border-radius: var(--border-radius);
+  padding: 10px;
+  color: var(--primary-color);
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.swiper-home-slider-farsh h3 {
+  height: 49px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.swiper-home-slider-farsh h3 a {
+  color: var(--text-color);
+}
+
+.swiper-home-slider-farsh img {
+  width: 100%;
+  height: 100%;
+}
+
+.Slider-price {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Slider-price span:first-child {
+  font-size: 14px;
+}
+.Slider-price span {
+  font-weight: 500;
+}
+
+.btn-view-product {
+  border: var(--border);
+  text-align: center;
+  padding: 5px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--primary-color);
+  transition: all 0.3s linear;
+}
+
+.btn-view-product:hover {
+  color: #fff;
+  background-color: var(--primary-color);
+}
+
+/* پایان اسلایدر فرش های دستباف */
+
+/* شروع باشگاه مشتریان */
+.club-container {
+  max-width: 1000px;
+  display: grid;
+  align-items: center;
+  justify-content: space-between;
+  grid-template-columns: repeat(2, 438px);
+  margin: 60px auto 50px;
+}
+
+.club-container-right {
+  text-align: center;
+}
+.club-container-right div {
+  display: flex;
+  flex-direction: column;
+}
+
+.club-container-title {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.club-container-title span:last-child {
+  color: var(--primary-color);
+}
+
+.club-container-right p {
+  max-width: 350px;
+  font-size: 16px;
+  line-height: 1.8rem;
+  margin: 8px auto 10px;
+}
+
+.club-container-left figure:first-child {
+  margin-bottom: -5.7px;
+}
+
+.club-container-left img {
+  width: 170px;
+}
+
+.club-container-right .club-container-btn-join {
+  width: 100%;
+  background-color: transparent;
+  border: var(--border);
+  border-radius: var(--border-radius);
+  padding: 8px;
+  color: var(--primary-color);
+  font-weight: 500;
+  cursor: pointer;
+}
+/* پایان باشگاه مشتربان */
+
+/* شروع پاپ آپ خبرنامه */
+.popup-club {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 99999999999;
+  background: #a8a8a8e0;
+  backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s linear;
+}
+
+.popup-club.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.popup-club-content {
+  color: var(--text-color);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: var(--border-radius);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.popup-club-content i {
+  align-self: flex-start;
+  background-color: var(--primary-color);
+  color: #fff;
+  border-radius: 100%;
+  width: 27px;
+  height: 27px;
+  text-align: center;
+  line-height: 27px;
+  cursor: pointer;
+}
+
+.popup-club-content h2 {
+  font-size: 20px;
+}
+.popup-club-content h2 span {
+  color: var(--primary-color);
+}
+
+.popup-club-content p span {
+  font-weight: 600;
+}
+
+.popup-club-content form {
+  width: 310px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+input#popup-club-email {
+  padding: 5px;
+  border: 2px var(--border-style) var(--border-color);
+  border-radius: 8px;
+}
+
+.popup-club-content form button {
+  padding: 5px;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+}
+/* پایان پاپ آپ خبرنامه */
+/* پایان صفحه اصلی */
+
+/* شروع صفحه ثبت نام و ورود */
+
+#account-page {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-login,
+.container-forgot-password {
+  visibility: hidden;
+  position: absolute;
+}
+
+.error-message-password,
+.message-register,
+.message-forgot-password {
+  text-align: center;
+  color: #fff;
+  padding: 10px;
+  border-radius: var(--border-radius);
+  margin-bottom: 5px;
+  display: none;
+  font-weight: 500;
+}
+.error-message-password {
+  background-color: var(--primary-color);
+}
+.message-register,
+.message-forgot-password {
+  background-color: #1bcb49;
+}
+
+.container-login-register {
+  display: grid;
+  grid-template-columns: 55% 43%;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-register-title {
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 15px;
+}
+
+.login-register-title h2 {
+  font-size: 32px;
+}
+
+.login-register-title p {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.text-forgot-password {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.container-login-register form div {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.container-login-register label {
+  position: absolute;
+  top: -15px;
+  right: 25px;
+  color: var(--text-color);
+  background-color: #fff;
+  padding: 1px 5px;
+  opacity: 0;
+  visibility: hidden;
+  font-size: 15px;
+  transition: all 0.3s linear;
+  pointer-events: none;
+}
+
+.container-login-register input:focus + label {
+  opacity: 1;
+  visibility: visible;
+}
+
+.container-login-register input:focus::placeholder {
+  color: transparent;
+}
+
+.container-login-register input:focus {
+  border-color: var(--primary-color);
+}
+
+.container-login-register input {
+  width: 100%;
+  border: var(--border-width) var(--border-style) var(--border-color);
+  border-radius: var(--border-radius);
+  color: var(--text-color);
+  font-size: 17px;
+  padding: 11px 36px 7px 7px;
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+  transition: all 0.3s linear;
+}
+
+/* شروع فیلدها */
+.register-rgiht input#register-name,
+.register-rgiht input#register-lastname {
+  background-image: url("../images//svg/user.svg");
+}
+.register-rgiht input#register-name:focus,
+.register-rgiht input#register-lastname:focus {
+  background-image: url("../images//svg/user-focus.svg");
+}
+
+.register-rgiht input#register-password,
+.register-rgiht input#register-confirm-password,
+.login-rgiht input#login-password {
+  background-image: url("../images//svg/password.svg");
+}
+.register-rgiht input#register-password:focus,
+.register-rgiht input#register-confirm-password:focus,
+.login-rgiht input#login-password:focus {
+  background-image: url("../images//svg/password-focus.svg");
+}
+
+.container-login-register input[type="tel"],
+.container-login-register input[type="tel"] {
+  background-image: url("../images//svg/tel.svg");
+  direction: ltr;
+  text-align: right;
+}
+.container-login-register input[type="tel"]:focus,
+.container-login-register input[type="tel"]:focus {
+  background-image: url("../images//svg/tel-focus.svg");
+}
+
+/* پایان فیلدها */
+
+.container-login-register div:last-child {
+  justify-self: center;
+}
+.container-login-register img {
+  width: 370px;
+  height: 550px;
+  border-radius: 26px;
+}
+
+.container-login-register form button[type="submit"] {
+  width: 100%;
+  border: none;
+  padding: 8px;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 17px;
+  cursor: pointer;
+  background-color: var(--primary-color);
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.show-register {
+  margin-top: 10px;
+}
+
+.show-register,
+.show-login,
+.show-forgot-password {
+  color: var(--text-color);
+  font-size: 18px;
+  text-align: center;
+}
+
+.show-register a,
+.show-login a,
+.show-forgot-password a {
+  color: var(--primary-color);
+}
+
+.show-password {
+  position: absolute;
+  top: 50%;
+  transform: translatey(-50%);
+  left: 11px;
+  font-size: 15px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+/* پایان صفحه ثبت نام و ورود */
